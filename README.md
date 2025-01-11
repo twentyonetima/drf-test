@@ -39,7 +39,7 @@ python manage.py runserver
 ### POST
 
 ```bash
-curl -X POST http://127.0.0.1:8000/tasks/ -H "Content-Type: application/json" -d '{"title": "TEST 1", "completed": false}'  #On PowerShell: Invoke-WebRequest -Uri http://127.0.0.1:8000/tasks/ -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"title": "Task 1", "completed": false}'
+curl -X POST http://127.0.0.1:8000/tasks/ -H "Content-Type: application/json" -d '{"title": "TEST 1", "completed": false}'  #On PowerShell: Invoke-WebRequest -Uri http://127.0.0.1:8000/tasks/ -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"title": "TEST 1", "completed": false}'
 ```
 
 Пример ответа:
