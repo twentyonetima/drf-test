@@ -42,9 +42,36 @@ python manage.py runserver
 curl -X POST http://127.0.0.1:8000/tasks/ -H "Content-Type: application/json" -d '{"title": "TEST 1", "completed": false}'  #On PowerShell: Invoke-WebRequest -Uri http://127.0.0.1:8000/tasks/ -Method POST -Headers @{ "Content-Type" = "application/json" } -Body '{"title": "Task 1", "completed": false}'
 ```
 
+Пример ответа:
+```bash
+{
+    "id": 1,
+    "title": "TEST 1",
+    "is_completed": false
+}
+```
+
+
+
 ### GET
 
 ```bash
 curl http://127.0.0.1:8000/tasks/
+```
+
+Пример ответа:
+```bash
+[
+    {
+        "id": 1,
+        "title": "TEST 1",
+        "is_completed": false
+    },
+    {
+        "id": 2,
+        "title": "TEST 2",
+        "is_completed": false
+    }
+]
 ```
 
